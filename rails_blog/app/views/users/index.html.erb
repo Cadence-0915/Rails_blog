@@ -1,0 +1,7 @@
+<h1>Here you will find a list of all registered users.</h1>
+
+<%= @users.each do |user|%>
+	<h2><%= user.fname %></h2>
+<% end %>
+<br>
+<%= link_to("New User", new_user_path) %>
